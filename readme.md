@@ -114,8 +114,9 @@ $$
 
 **Altitude Inversion:**
 
-- Original: \(\ddot z = -g + (u_1/m)\cosφ\cosθ\).
+- Original: $\(\ddot z = -g + (u_1/m)\cosφ\cosθ\)$.
 - Feedback linearization: solve for \(u_1=F\) so
+  
   $$
     F = m\frac{g + u_z^d}{\cosφ\cosθ},
     \quad
@@ -125,7 +126,8 @@ $$
 **Planar Inversion:**
 
 - Original lateral: coupling via φ,θ,ψ.
-- Map desired accel \([u_x^d,u_y^d]\) to target tilts:
+- Map desired accel $\([u_x^d,u_y^d]\)$ to target tilts:
+
   $$
     φ^d = \frac{u_x^d\sinψ - u_y^d\cosψ}{g},
     \quad
@@ -176,33 +178,63 @@ $$
 
 ## 📊 Results & Visualization
 
-After running `my_drone_model.m` with a **cross** configuration on the **spiral** trajectory, the following outputs demonstrate system performance:
+### Step Response
+  After running `main.m` with a **cross** configuration on the **hoverXY** step response, the following outputs demonstrate system performance:
 
-**Figure 1: Actual vs. Desired Path**\
-• Overlay of actual (blue) and desired (red) spirals. Near‑perfect alignment indicates precise feedback linearization and PID tuning.
+  ** Figure 1: Actual vs. Desired Path**\
+  • Overlay of actual (blue) and desired (red) steps. Near‑perfect alignment indicates precise feedback linearization and PID tuning.
 
-![1753307419807](image/readme/1753307419807.png)
+  ![1753312271195](image/readme/1753312271195.png)
 
-**Figure 2: Position Error Subplots**\
-• Error in X, Y, and Z. X/Y errors converge within ±0.2 m and Z error decays to <0.01 m, demonstrating fast settling and minimal steady‑state error.
+  **Figure 2: Position Error Subplots**\
+  • Error in X, Y, and Z. X/Y errors converge within ±0.01 m and Z error decays to <0.01 m, demonstrating fast settling and minimal steady‑state error.
 
-![1753307390910](image/readme/1753307390910.png)
+  ![1753312310464](image/readme/1753312310464.png)
 
-![1753307400019](image/readme/1753307400019.png)
+  ![1753312316617](image/readme/1753312316617.png)
 
-**Figure 3: Distance From Origin**\
-• Radial distance √(x²+y²) vs. target radius (2 m). The drone maintains within ±0.1 m of the desired radius throughout the flight.
+  **Figure 3: Distance From Origin**\
+  • Distances (drone vs trajectory). 
+  ![1753312510856](image/readme/1753312510856.png)
 
-![1753307439937](image/readme/1753307439937.png)
+  **Animation**
+  Step response animation shows drone controllers to step response. 
 
-**Animation**
+    <video controls
+        src="https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09"
+        style="max-width:100%;">
+    Your browser doesn’t support HTML5 video.
+  </video>
 
-- `trajectory_following.mp4` depicts live flight—showing real‑time drone and target indicators, with error vectors and orientation arms.
+### Helix Trajectory
+  After running `main.m` with a **cross** configuration on the **spiral** trajectory, the following outputs demonstrate system performance:
 
-<video width="640" controls>
-  <source src="https://github.com/nrlhozkan/nrlhozkan-Drone-Simulation-and-Control/blob/main/trajectory_following.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  **Figure 1: Actual vs. Desired Path**\
+  • Overlay of actual (blue) and desired (red) spirals. Near‑perfect alignment indicates precise feedback linearization and PID tuning.
+
+  ![1753307419807](image/readme/1753307419807.png)
+
+  **Figure 2: Position Error Subplots**\
+  • Error in X, Y, and Z. X/Y errors converge within ±0.2 m and Z error decays to <0.01 m, demonstrating fast settling and minimal steady‑state error.
+
+  ![1753307390910](image/readme/1753307390910.png)
+
+  ![1753307400019](image/readme/1753307400019.png)
+
+  **Figure 3: Distance From Origin**\
+  • Radial distance √(x²+y²) vs. target radius (2 m). The drone maintains within ±0.1 m of the desired radius throughout the flight.
+
+  ![1753307439937](image/readme/1753307439937.png)
+
+  **Animation**
+
+  - `trajectory_following.mp4` depicts live flight—showing real‑time drone and target indicators, with error vectors and orientation arms.
+
+  <video controls
+        src="https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09"
+        style="max-width:100%;">
+    Your browser doesn’t support HTML5 video.
+  </video>
 ---
 
 ---
