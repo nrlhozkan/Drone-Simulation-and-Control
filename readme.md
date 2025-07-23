@@ -178,8 +178,12 @@ $$
 
 ## 📊 Results & Visualization
 
+<<<<<<< HEAD
 ### Step Response
   After running `main.m` with a **cross** configuration on the **hoverXY** step response, the following outputs demonstrate system performance:
+=======
+After running `main.m` with a **cross** configuration on the **spiral** trajectory, the following outputs demonstrate system performance:
+>>>>>>> 7b0d3d19254f7f519e4d5652de94957e8a9de6a3
 
   ** Figure 1: Actual vs. Desired Path**\
   • Overlay of actual (blue) and desired (red) steps. Near‑perfect alignment indicates precise feedback linearization and PID tuning.
@@ -209,6 +213,7 @@ $$
 ### Helix Trajectory
   After running `main.m` with a **cross** configuration on the **spiral** trajectory, the following outputs demonstrate system performance:
 
+<<<<<<< HEAD
   **Figure 1: Actual vs. Desired Path**\
   • Overlay of actual (blue) and desired (red) spirals. Near‑perfect alignment indicates precise feedback linearization and PID tuning.
 
@@ -235,6 +240,13 @@ $$
         style="max-width:100%;">
     Your browser doesn’t support HTML5 video.
   </video>
+=======
+<video controls
+       src="https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09"
+       style="max-width:100%;">
+  Your browser doesn’t support HTML5 video.
+</video>
+>>>>>>> 7b0d3d19254f7f519e4d5652de94957e8a9de6a3
 ---
 
 ---
