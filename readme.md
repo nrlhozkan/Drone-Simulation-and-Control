@@ -114,7 +114,7 @@ $$
 
 **Altitude Inversion:**
 
-- Original: \(\ddot z = -g + (u_1/m)\cosφ\cosθ\).
+- Original: ```math \(\ddot z = -g + (u_1/m)\cosφ\cosθ\). ```
 - Feedback linearization: solve for \(u_1=F\) so
   $$
     F = m\frac{g + u_z^d}{\cosφ\cosθ},
