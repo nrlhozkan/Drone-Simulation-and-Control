@@ -204,8 +204,8 @@ After running `main.m` with a **cross** configuration on the **spiral** trajecto
   **Animation**
   Step response animation shows drone controllers to step response. 
 
-    <video controls
-        src="https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09"
+  <video controls
+        src="https://github.com/user-attachments/assets/8193407e-1f2e-4c5a-baf7-19cd345f10e9"
         style="max-width:100%;">
     Your browser doesn’t support HTML5 video.
   </video>
@@ -241,15 +241,6 @@ After running `main.m` with a **cross** configuration on the **spiral** trajecto
     Your browser doesn’t support HTML5 video.
   </video>
 =======
-<video controls
-       src="https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09"
-       style="max-width:100%;">
-  Your browser doesn’t support HTML5 video.
-</video>
->>>>>>> 7b0d3d19254f7f519e4d5652de94957e8a9de6a3
----
-
----
 
 ## 🔮 Future Extensions
 
