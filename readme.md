@@ -181,7 +181,7 @@ $$
 ### Step Response
   After running `main.m` with a **cross** configuration on the **hoverXY** step response, the following outputs demonstrate system performance:
 
-  ** Figure 1: Actual vs. Desired Path**\
+  **Figure 1: Actual vs. Desired Path**\
   • Overlay of actual (blue) and desired (red) steps. Near‑perfect alignment indicates precise feedback linearization and PID tuning.
 
   ![1753312271195](image/readme/1753312271195.png)
