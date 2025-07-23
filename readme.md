@@ -116,21 +116,23 @@ $$
 
 - Original: $\(\ddot z = -g + (u_1/m)\cosφ\cosθ\)$.
 - Feedback linearization: solve for \(u_1=F\) so
-  $
+  
+  $$
     F = m\frac{g + u_z^d}{\cosφ\cosθ},
     \quad
     \ddot z = u_z^d.
-  $
+  $$
 
 **Planar Inversion:**
 
 - Original lateral: coupling via φ,θ,ψ.
 - Map desired accel $\([u_x^d,u_y^d]\)$ to target tilts:
-  $
+
+   $$
     φ^d = \frac{u_x^d\sinψ - u_y^d\cosψ}{g},
     \quad
     θ^d = \frac{u_x^d\cosψ + u_y^d\sinψ}{g}.
-  $
+  $$
 
 **Attitude Loop:** PD control on φ,θ,ψ errors.
 
