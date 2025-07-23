@@ -128,11 +128,11 @@ $$
 - Original lateral: coupling via φ,θ,ψ.
 - Map desired accel $\([u_x^d,u_y^d]\)$ to target tilts:
 
-   $$
+   ```math
     φ^d = \frac{u_x^d\sinψ - u_y^d\cosψ}{g},
     \quad
     θ^d = \frac{u_x^d\cosψ + u_y^d\sinψ}{g}.
-  $$
+  ```
 
 **Attitude Loop:** PD control on φ,θ,ψ errors.
 
