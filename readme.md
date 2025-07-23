@@ -199,8 +199,11 @@ After running `my_drone_model.m` with a **cross** configuration on the **spiral*
 
 - `trajectory_following.mp4` depicts live flight—showing real‑time drone and target indicators, with error vectors and orientation arms.
 
-![Simulation Video] (https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09)
-
+<video controls
+       src="https://github.com/user-attachments/assets/2bc7aa80-2fde-4106-85ea-beab1aa14d09"
+       style="max-width:100%;">
+  Your browser doesn’t support HTML5 video.
+</video>
 ---
 
 ---
